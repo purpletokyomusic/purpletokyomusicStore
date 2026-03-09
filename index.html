@@ -1,0 +1,1567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+=================================================================
+  PURPLE TOKYO — Music Site  |  by Hector Pacheco
+=================================================================
+  HOW TO EDIT:
+  1. Open this file in VS Code (free at code.visualstudio.com)
+  2. Press CTRL+F (Mac: CMD+F) and search  EDIT:
+     Every place you need to change something is marked EDIT:
+  3. Save, then double-click the file to preview in your browser
+  4. When done, drag the file to  netlify.com/drop  to go live free
+
+  QUICK GUIDE:
+  - Change artist name ......... search: EDIT: artist name
+  - Change album/EP names ...... search: EDIT: project name
+  - Change track names ......... search: EDIT: track name
+  - Add a featured artist ...... search: EDIT: feat
+  - Change duration ............ search: EDIT: duration
+  - Edit your bio .............. search: EDIT: bio
+  - Change stats ............... search: EDIT: stats
+=================================================================
+-->
+<!-- EDIT: browser tab title -->
+<title>PURPLE TOKYO — Music</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Mono:ital,wght@0,400;1,400&family=Shippori+Mincho:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div>
+    <div class="logo-main">Purple Tokyo</div>  <!-- EDIT: artist name -->
+    <div class="logo-sub">Hector Pacheco</div>  <!-- EDIT: real name -->
+  </div>
+  <ul>
+    <li><a href="#catalog">Music</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="mailto:contact@purpletokyo.com">Contact</a></li>  <!-- EDIT: your email -->
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="scanlines"><span></span><span></span><span></span></div>
+
+  <!-- EDIT: genre tag shown above your name -->
+  <div class="hero-tag">Electronic / Darkwave / Techno</div>
+
+  <!-- EDIT: your name in Japanese — delete this line if you don't want it -->
+  <div class="hero-jp">パープル東京</div>
+
+  <h1 class="hero-h1">
+    <!-- EDIT: first word of artist name -->
+    <span class="line1">PURPLE</span>
+    <!-- EDIT: second word of artist name (gets the purple gradient) -->
+    <span class="line2">TOKYO</span>
+  </h1>
+
+  <!-- EDIT: tagline under your name -->
+  <div class="hero-sub">Hector Pacheco &mdash; Pay What You Want</div>
+
+  <div class="hero-cta">
+    <a href="#catalog" class="btn-p">Browse Music</a>
+    <a href="#about" class="btn-s">The Mission</a>
+  </div>
+</section>
+
+<!-- ================================================================
+  MUSIC CATALOG
+  ================================================================
+  HOW YEAR FILTERS WORK:
+    Each project block has  data-year="XXXX"
+    The filter buttons use this to show/hide projects by year.
+    data-year="older" = shows under the "Earlier" filter button.
+
+  HOW TO EDIT A TRACK:
+    Find the track and change the 5 things marked EDIT: inside it.
+    The data-track number must stay unique — never repeat a number.
+
+  HOW TO ADD A NEW PROJECT:
+    Copy an entire project block and paste it after the last one.
+    Change the data-year, year label, project name, tag, and tracks.
+    Keep counting the data-track numbers (100, 101, 102...).
+================================================================ -->
+<section class="catalog" id="catalog">
+  <div class="sec-head">
+    <h2 class="sec-title">DISCO<span>GRAPHY</span></h2>
+    <!-- EDIT: stats — update when you change track/project count -->
+    <span class="sec-meta">101 Tracks by Artist &middot; 7 Projects</span>
+  </div>
+
+  <!-- ── FILTER BUTTONS ──────────────────────────────────────────────
+    EDIT: Change the years to match your real release years.
+    The  data-filter  value must exactly match  data-year  on each project block.
+  ─────────────────────────────────────────────────────────────────── -->
+  <div class="filters">
+    <button class="fb active" data-filter="all">All</button>
+    <button class="fb" data-filter="2024">2024</button>   <!-- EDIT: year -->
+    <button class="fb" data-filter="2023">2023</button>   <!-- EDIT: year -->
+    <button class="fb" data-filter="2022">2022</button>   <!-- EDIT: year -->
+    <button class="fb" data-filter="2021">2021</button>   <!-- EDIT: year -->
+    <button class="fb" data-filter="2020">2020</button>   <!-- EDIT: year -->
+    <button class="fb" data-filter="older">Earlier</button>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════════
+    PROJECT 1 OF 7
+    EDIT: data-year must match one of the filter buttons above.
+    EDIT: project-tag class options are:  album  ep  single
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="project-block" data-year="2024">
+    <div class="proj-head">
+      <span class="proj-year">2024</span>                           <!-- EDIT: release year -->
+      <span class="proj-name">ELLE & EL</span>   <!-- EDIT: project name -->
+      <span class="proj-tag album">Album</span>            <!-- EDIT: type label + class (album/ep/single) -->
+    </div>
+    <div class="track-list">
+      <div class="track" data-track="0" data-name="Ain'T No Sunshine" data-project="ELLE & EL" data-duration="3:45">
+        <span class="tnum">01</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Ain'T No Sunshine</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <div class="track" data-track="1" data-name="Space Call" data-project="ELLE & EL" data-duration="3:45">
+        <span class="tnum">02</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Space Call</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+  <!-- ══════════════════════════════════════════════════════════════
+    PROJECT 2 OF 7
+    EDIT: data-year must match one of the filter buttons above.
+    EDIT: project-tag class options are:  album  ep  single
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="project-block" data-year="2023">
+    <div class="proj-head">
+      <span class="proj-year">2023</span>                           <!-- EDIT: release year -->
+      <span class="proj-name">Purple Tokyo</span>   <!-- EDIT: project name -->
+      <span class="proj-tag album">Album</span>            <!-- EDIT: type label + class (album/ep/single) -->
+    </div>
+    <div class="track-list">
+
+      <!-- ── TRACK 01 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="14" must stay unique — never repeat -->
+      <div class="track" data-track="14" data-name="Again & Again" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">01</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Again & Again</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 02 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="15" must stay unique — never repeat -->
+      <div class="track" data-track="15" data-name="Annunaki" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">02</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Annunaki</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 03 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="16" must stay unique — never repeat -->
+      <div class="track" data-track="16" data-name="As I Get Close" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">03</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">As I Get Close</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 04 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="17" must stay unique — never repeat -->
+      <div class="track" data-track="17" data-name="Blasphemy" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">04</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Blasphemy</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 05 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="18" must stay unique — never repeat -->
+      <div class="track" data-track="18" data-name="Bohemian Grove" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">05</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Bohemian Grove</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 06 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="19" must stay unique — never repeat -->
+      <div class="track" data-track="19" data-name="Cali Nights Chicago Mornings" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">06</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Cali Nights Chicago Mornings</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 07 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="20" must stay unique — never repeat -->
+      <div class="track" data-track="20" data-name="Chess" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">07</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Chess</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 08 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="21" must stay unique — never repeat -->
+      <div class="track" data-track="21" data-name="Crypto" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">08</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Crypto</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 09 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="22" must stay unique — never repeat -->
+      <div class="track" data-track="22" data-name="Deprivation Tank" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">09</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Deprivation Tank</div>             <!-- EDIT: track name -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+      <!-- ── TRACK 10 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="23" must stay unique — never repeat -->
+      <div class="track" data-track="23" data-name="Exglass" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">10</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Exglass</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 11 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="24" must stay unique — never repeat -->
+      <div class="track" data-track="24" data-name="Imagenes" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">11</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Imagenes</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 12 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="25" must stay unique — never repeat -->
+      <div class="track" data-track="25" data-name="Life Guard" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">12</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Life Guard</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 13 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="26" must stay unique — never repeat -->
+      <div class="track" data-track="26" data-name="Lifeguard" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">13</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Lifeguard</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 14 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="27" must stay unique — never repeat -->
+      <div class="track" data-track="27" data-name="Love." data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">14</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Love.</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 15 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="28" must stay unique — never repeat -->
+      <div class="track" data-track="28" data-name="Mach" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">15</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Mach</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 16 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="29" must stay unique — never repeat -->
+      <div class="track" data-track="29" data-name="Montauk" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">16</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Montauk</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 17 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="30" must stay unique — never repeat -->
+      <div class="track" data-track="30" data-name="Nameless" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">17</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Nameless</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 18 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="31" must stay unique — never repeat -->
+      <div class="track" data-track="31" data-name="Olvida" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">18</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Olvida</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 19 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="32" must stay unique — never repeat -->
+      <div class="track" data-track="32" data-name="Recovery" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">19</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Recovery</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 20 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="33" must stay unique — never repeat -->
+      <div class="track" data-track="33" data-name="Sake Bombs" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">20</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Sake Bombs</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 21 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="34" must stay unique — never repeat -->
+      <div class="track" data-track="34" data-name="Si Una Vez" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">21</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Si Una Vez</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 22 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="35" must stay unique — never repeat -->
+      <div class="track" data-track="35" data-name="So Many Details" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">22</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">So Many Details</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 23 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="36" must stay unique — never repeat -->
+      <div class="track" data-track="36" data-name="Spring Love" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">23</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Spring Love</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 24 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="37" must stay unique — never repeat -->
+      <div class="track" data-track="37" data-name="Super Powers" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">24</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Super Powers</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+      <!-- ── TRACK 25 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="38" must stay unique — never repeat -->
+      <div class="track" data-track="38" data-name="Venosity" data-project="Purple Tokyo" data-duration="3:45">
+        <span class="tnum">25</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Venosity</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+    </div><!-- /track-list PROJECT 2 -->
+  </div><!-- /project-block PROJECT 2 -->
+
+
+  <!-- ══════════════════════════════════════════════════════════════
+    PROJECT 3 OF 7
+    EDIT: data-year must match one of the filter buttons above.
+    EDIT: project-tag class options are:  album  ep  single
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="project-block" data-year="2022">
+    <div class="proj-head">
+      <span class="proj-year">2022</span>                           <!-- EDIT: release year -->
+      <span class="proj-name">Purple Tokyo Features</span>   <!-- EDIT: project name -->
+      <span class="proj-tag album">Album</span>            <!-- EDIT: type label + class (album/ep/single) -->
+    </div>
+    <div class="track-list">
+
+      <!-- ── TRACK 01 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="27" must stay unique — never repeat -->
+      <div class="track" data-track="27" data-name="Decision Letal" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">01</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Decision Letal</div>             <!-- EDIT: track name -->
+          <div class="tfeat">feat. Acacia Carr</div>           <!-- EDIT: featured artist -->
+        </div>
+        <span class="tdur">3:45</span>                         <!-- EDIT: duration e.g. 3:42 -->
+        <span class="tplays">0</span>                          <!-- EDIT: play count or delete -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+      <div class="track" data-track="28" data-name="Climax" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">02</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Climax</div>
+          <div class="tfeat">feat. L O kari</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="29" data-name="Amor Divino" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">03</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Amor Divino</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="30" data-name="Falling" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">04</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Falling</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="31" data-name="Los Dos" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">05</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Los Dos</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="32" data-name="Rebeldes" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">06</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Rebeldes</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="33" data-name="Somebody To Love" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">07</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Somebody To Love</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="34" data-name="Wasted" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">08</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Wasted</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="35" data-name="Your Word For Mine" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">09</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Your Word For Mine</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="36" data-name="Your Word For Mine Pt 2" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">10</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Your Word For Mine Pt 2</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="37" data-name="Your Word For Mine Pt. 3" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">11</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Your Word For Mine Pt. 3</div>
+          <div class="tfeat">feat. Leo Da Don</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="38" data-name="Shade" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">12</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Shade</div>
+          <div class="tfeat">feat. Lester Rey</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="39" data-name="Energy / Double Life" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">13</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Energy / Double Life</div>
+          <div class="tfeat">feat. Makia</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="40" data-name="Fantasy" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">14</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Fantasy</div>
+          <div class="tfeat">feat. Makia</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="41" data-name="Paranoid" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">15</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Paranoid</div>
+          <div class="tfeat">feat. Makia</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="42" data-name="Possibilities" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">16</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Possibilities</div>
+          <div class="tfeat">feat. Makia</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="43" data-name="Rediscover" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">17</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Rediscover</div>
+          <div class="tfeat">feat. Makia</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="44" data-name="Burn" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">18</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Burn</div>
+          <div class="tfeat">feat. Miss Trezz</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="45" data-name="Thinking Of You" data-project="Purple Tokyo Features" data-duration="3:45">
+        <span class="tnum">19</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Thinking Of You</div>
+          <div class="tfeat">feat. Tess Finley</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+
+    </div><!-- /track-list PROJECT 3 -->
+  </div><!-- /project-block PROJECT 3 -->
+
+
+  <!-- ══════════════════════════════════════════════════════════════
+    PROJECT 4 OF 7
+    EDIT: data-year must match one of the filter buttons above.
+    EDIT: project-tag class options are:  album  ep  single
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="project-block" data-year="2021">
+    <div class="proj-head">
+      <span class="proj-year">2021</span>                           <!-- EDIT: release year -->
+      <span class="proj-name">RKTR</span>   <!-- EDIT: project name -->
+      <span class="proj-tag album">Album</span>            <!-- EDIT: type label + class (album/ep/single) -->
+    </div>
+    <div class="track-list">
+
+      <!-- ── TRACK 02 ──
+           EDIT: data-name        = track title
+           EDIT: data-project     = must match the project name above
+           EDIT: data-duration    = e.g. 3:42
+           EDIT: track name text  = same as data-name
+           EDIT: feat. line       = featured artist, or DELETE that line if none
+           EDIT: duration span    = same as data-duration
+           EDIT: openModal text   = same as data-name and data-project
+           NOTE: data-track="55" must stay unique — never repeat -->
+          <div class="tfeat">feat. Artist Name</div>           <!-- EDIT: featured artist — DELETE this line if none -->
+        </div>
+        <span class="tdur">0:00</span>                         <!-- EDIT: duration e.g. 3:42 -->
+      <div class="track" data-track="41" data-name="A Short Intro" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">01</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">A Short Intro</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="42" data-name="Abduction" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">02</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Abduction</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="43" data-name="Alive Ultra" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">03</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Alive Ultra</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="44" data-name="August Burns On" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">04</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">August Burns On</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="45" data-name="Bad Decisions A Fast Changes" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">05</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Bad Decisions A Fast Changes</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="46" data-name="Basswrecked" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">06</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Basswrecked</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="47" data-name="Birthday Sex" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">07</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Birthday Sex</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="48" data-name="Bring Up That Fader" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">08</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Bring Up That Fader</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="49" data-name="Cant Stop This Feeling" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">09</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Cant Stop This Feeling</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="50" data-name="Come With Me" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">10</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Come With Me</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="51" data-name="Cracked" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">11</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Cracked</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="52" data-name="Crank The Electro" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">12</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Crank The Electro</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="53" data-name="Dead Alive" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">13</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Dead Alive</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="54" data-name="Deadmou5 Famous" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">14</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Deadmou5 Famous</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="55" data-name="Devastation" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">15</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Devastation</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="56" data-name="Digital Dream" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">16</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Digital Dream</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="57" data-name="Divisions" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">17</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Divisions</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="58" data-name="Dub Drums" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">18</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Dub Drums</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="59" data-name="Dubious Dubstep" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">19</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Dubious Dubstep</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="60" data-name="Dubstep Intro 2 Jp" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">20</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Dubstep Intro 2 Jp</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="61" data-name="Earsex" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">21</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Earsex</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="62" data-name="Enter The Reactor" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">22</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Enter The Reactor</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="63" data-name="Factory Grindhouse" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">23</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Factory Grindhouse</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="64" data-name="Gypsy Hourse Race" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">24</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Gypsy Hourse Race</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="65" data-name="Halloween" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">25</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Halloween</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="66" data-name="Hard Club Drop" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">26</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Hard Club Drop</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="67" data-name="Heaven Has Fallen" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">27</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Heaven Has Fallen</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="68" data-name="Hope You Come With Me (Extended)" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">28</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Hope You Come With Me (Extended)</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="69" data-name="Hypnotized" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">29</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Hypnotized</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="70" data-name="I Call Her Summer" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">30</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">I Call Her Summer</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="71" data-name="Ibiza" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">31</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Ibiza</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="72" data-name="Infamy" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">32</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Infamy</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="73" data-name="Intro Goes Here" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">33</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Intro Goes Here</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="74" data-name="Jupiter" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">34</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Jupiter</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="75" data-name="Keep The Lights On" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">35</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Keep The Lights On</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="76" data-name="Legion Of The Ones" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">36</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Legion Of The Ones</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="77" data-name="Lucid" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">37</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Lucid</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="78" data-name="Mission" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">38</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Mission</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="79" data-name="Mouse Trap" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">39</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Mouse Trap</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="80" data-name="Night Strife" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">40</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Night Strife</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="81" data-name="One Reason" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">41</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">One Reason</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="82" data-name="Oscillator Freak" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">42</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Oscillator Freak</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="83" data-name="Outtatime" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">43</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Outtatime</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="84" data-name="Party Monster" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">44</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Party Monster</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="85" data-name="Rave In My Mind" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">45</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Rave In My Mind</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="86" data-name="React" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">46</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">React</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="87" data-name="Reflections" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">47</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Reflections</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="88" data-name="Remember" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">48</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Remember</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="89" data-name="Render Reality" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">49</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Render Reality</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="90" data-name="Sky City" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">50</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Sky City</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="91" data-name="Stress" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">51</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Stress</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="92" data-name="Stupid Top 40 Song" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">52</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Stupid Top 40 Song</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="93" data-name="The Drop" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">53</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">The Drop</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="94" data-name="The Girl On Fullerton" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">54</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">The Girl On Fullerton</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="95" data-name="The Odd Polygon" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">55</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">The Odd Polygon</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="96" data-name="The Set Up" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">56</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">The Set Up</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="97" data-name="Thomp" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">57</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Thomp</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="98" data-name="Time Over" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">58</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Time Over</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="99" data-name="Time Travel" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">59</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Time Travel</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="100" data-name="Tonight'S Hero" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">60</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Tonight'S Hero</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="101" data-name="Victory" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">61</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Victory</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="102" data-name="Video Scoring Toolkit Feel The Rush" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">62</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Video Scoring Toolkit Feel The Rush</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="103" data-name="Warehouse Grind" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">63</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Warehouse Grind</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="104" data-name="Wave Forms" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">64</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Wave Forms</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="105" data-name="X-Axis" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">65</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">X-Axis</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+      <div class="track" data-track="106" data-name="Zero" data-project="RKTR" data-duration="3:45">
+        <span class="tnum">66</span>
+        <span class="pico">&#9654;</span>
+        <div class="tinfo">
+          <div class="tname">Zero</div>
+        </div>
+        <span class="tdur">3:45</span>
+        <span class="tplays">0</span>
+      </div>
+</div><!-- /track-list PROJECT 4 -->
+        <!-- EDIT: openModal first string = track name, second string = project name -->
+      </div>
+
+
+
+
+
+<!-- ================================================================
+  ABOUT SECTION — edit your bio and stats
+================================================================ -->
+<section class="about" id="about">
+  <div>
+    <div class="aey">// About</div>
+    <h2 class="atitle">
+      Hector<br>          <!-- EDIT: first name -->
+      <span>Pacheco</span> <!-- EDIT: last name (purple gradient) -->
+    </h2>
+    <div class="atext">
+      <!-- EDIT: bio — replace all three paragraphs with your real story -->
+      <p>Electronic producer and sound designer from the underground. Purple Tokyo is a world built in frequency — dark, cinematic, and always moving.</p>
+      <p>Every track here is yours. Pay what feels right — $0 or $20, it all goes toward the next project, the next late night, the next transmission.</p>
+      <p>High-quality WAV + MP3. No DRM. No walls. Just sound.</p>
+    </div>
+  </div>
+  <div class="stats">
+    <!-- EDIT: stats — update numbers to match your real catalog -->
+    <div class="stat"><div class="snum">100</div><div class="slbl">Tracks</div></div>       <!-- EDIT: track count -->
+    <div class="stat"><div class="snum">7</div><div class="slbl">Projects</div></div>        <!-- EDIT: project count -->
+    <div class="stat"><div class="snum">6+</div><div class="slbl">Years Active</div></div>   <!-- EDIT: years -->
+    <div class="stat"><div class="snum">&#8734;</div><div class="slbl">Replays</div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="flogo">Purple Tokyo</div>                                          <!-- EDIT: artist name -->
+  <div class="fcopy">&copy; Hector Pacheco. Pay what you want. Keep it moving.</div>  <!-- EDIT: footer text -->
+</footer>
+
+<!-- PLAYER BAR — no editing needed -->
+<div class="pbar" id="pbar">
+  <div class="pdot" id="pdot"></div>
+  <div class="pinfo">
+    <div class="pname" id="pname">&#8212;</div>
+    <div class="pproj" id="pproj">Purple Tokyo</div>
+  </div>
+  <div class="pctrl">
+    <button class="cb" onclick="prevT()">&#9198;</button>
+    <button class="cb pp" id="ppbtn" onclick="togPlay()">&#9654;</button>
+    <button class="cb" onclick="nextT()">&#9197;</button>
+  </div>
+  <button class="pbuy" id="pbuy">Get Track</button>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div class="overlay" id="overlay" onclick="closeOut(event)">
+  <div class="modal">
+    <button class="mcls" onclick="closeM()">&#10005;</button>
+    <div class="mey">// Download Track</div>
+    <div class="mname" id="mname">&#8212;</div>
+    <div class="mproj" id="mproj">&#8212;</div>
+    <div class="mlbl">// Choose your price</div>
+    <div class="amts">
+      <button class="ab" onclick="setAmt(1)">$1</button>
+      <button class="ab sel" onclick="setAmt(3)">$3</button>
+      <button class="ab" onclick="setAmt(5)">$5</button>
+      <button class="ab" onclick="setAmt(10)">$10</button>
+    </div>
+    <div class="acustom">
+      <span class="adol">$</span>
+      <input class="ainp" type="number" id="cinp" placeholder="Other amount" min="0" oninput="custIn()"/>
+    </div>
+    <!-- EDIT: thank-you message shown to fans in the payment popup -->
+    <div class="mnote">100% goes to Hector Pacheco. Every dollar funds the next transmission.</div>
+    <button class="paybtn" onclick="doPay()">DOWNLOAD &mdash; <span id="plbl">$3</span></button>
+    <a class="freelink" onclick="doFree()">Download for free instead</a>
+  </div>
+</div>
+
+<div class="toast" id="toast">&#10003; Downloading</div>
+
+<script src="script.js"></script>
+</body>
+</html>
